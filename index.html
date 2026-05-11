@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- ESCALA DO SITE -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome = BIBLIOTECA DE ICONE. -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- GOOGLE FONTS = BIBLIOTECA DE FONTE. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/variavel.css">
+    <link rel="stylesheet" href="CSS/hero.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/galeria.css">
+
+    <!-- Descrição do site -->
+
+    <meta name="description" content="Barbearia .">
+
+    <!-- Titulo da pagina -->
+
+    <title>Home Page | Projeto Barbearia</title>
+
+    <!-- Ícone -->
+    <link rel="shortcut icon" href="img/icones/logo.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Cabeçario -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="brand">
+
+                <img src="img/icones/logo.ico" alt="Barbearia" loading="eager" width="40" height="40">
+
+                <span class="brand-name">Barberia XXX</span>
+
+            </div>
+
+            <ul class="menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <!-- CAPA -->
+            <div class="overlay"></div>
+            <!-- Essa div existe só para escurecer a imagem futuramente, Ela NÃO tem conteúdo - Ela é uma camada visual. -->
+
+            <div class="hero-content"> <!-- Aqui fica o conteúdo REAL da hero: título,texto & botão -->
+
+                <h1>Seu estilo começa aqui.</h1>
+                <p>
+                    Cortes clássicos e modernos com atendimento premium.
+                </p>
+
+                <a href="#">
+                    Agendar horário
+                </a>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section class="sobre">
+
+            <div class="sobre-imagem"><!-- Essa div é para ligar a imagem ao codigo. -->
+
+                <img src="img/sobre/barbeiro.jpg" alt="Barbeiro trabalhando" loading="lazy" width="600" height="700">
+
+            </div>
+
+            <div class="sobre-conteudo"> <!-- Conteudo da section sobre nos -->
+
+                <h2>Sobre Nós</h2>
+
+                <p> Há anos, nossa barbearia foi construída com um único objetivo: elevar o cuidado masculino a um
+                    padrão de excelência.</p>
+                <p>Aqui, cada corte é pensado com técnica, precisão e respeito ao estilo de cada cliente, unindo
+                    tradição e tendências modernas. </p>
+                <p>Mais do que um corte de cabelo, entregamos experiência, atenção aos detalhes e consistência no
+                    resultado.
+                </p>
+
+            </div>
+
+        </section>
+        <!-- APRESENTAÇÃO DOS SERVIÇOS -->
+
+        <section class="servicos">
+
+            <div class="servicos-conteudo"> <!-- Conteudo da section serviços -->
+
+                <h2>Nossos Serviços</h2>
+
+                <p>
+                    Cortes modernos, barba, acabamento e cuidados
+                    personalizados para valorizar seu estilo.
+                </p>
+
+            </div>
+
+            <div class="servicos-imagem"> <!-- Essa div é para ligar a imagem ao codigo. -->
+
+                <img src="img/servicos/trabalho.png" alt="Barbeiro trabalhando" loading="lazy" width="600" height="700">
+
+            </div>
+
+        </section>
+
+        <!-- GALERIA  Carousel / Slider -->
+
+        <section class="galeria">
+
+            <h2>Galeria</h2>
+
+          <p>Sabemos que palavras não são suficientes para mostrar o resultado do nosso trabalho. Então, em vez de apenas falar, mostramos. Dê uma olhada na nossa galeria e veja de perto o padrão que entregamos todos os dias. </p>
+
+            <div class="galeria-container">
+
+                <div class="galeria-click left"></div>
+                <div class="galeria-click right"></div>
+
+
+                <div class="galeria-imagens">
+
+                    <img src="img/galeria/galeria1.webp" alt="Corte masculino moderno" loading="lazy" width="400"
+                        height="500">
+
+                    <img src="img/galeria/galeria2.webp" alt="Barba alinhada" loading="lazy" width="400" height="500">
+
+                    <img src="img/galeria/galeria3.webp" alt="Corte degradê masculino" loading="lazy" width="400"
+                        height="500">
+                    <img src="img/galeria/galeria4.webp" alt="Corte masculino moderno" loading="lazy" width="400"
+                        height="500">
+                    <img src="img/galeria/galeria5.webp" alt="Corte masculino moderno" loading="lazy" width="400"
+                        height="500">
+
+
+
+                    <!--- DUPLICADO PARA O JS FUNCIONAR -->
+                    <img src="img/galeria/galeria1.webp" alt="Corte masculino moderno" loading="lazy" width="400"
+                        height="500">
+
+                    <img src="img/galeria/galeria2.webp" alt="Barba alinhada" loading="lazy" width="400" height="500">
+
+                    <img src="img/galeria/galeria3.webp" alt="Corte degradê masculino" loading="lazy" width="400"
+                        height="500">
+                    <img src="img/galeria/galeria4.webp" alt="Corte masculino moderno" loading="lazy" width="400"
+                        height="500">
+                    <img src="img/galeria/galeria5.webp" alt="Corte masculino moderno" loading="lazy" width="400"
+                        height="500">
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DEPOIMENTOS EM CARDS DOS CLIENTES -->
+
+        <section class="depoimentos">
+
+            <h2>O que nossos clientes dizem</h2> <!-- Apresentação -->
+
+            <p>
+                “Atendimento acima do esperado. Cheguei sem ideia do corte e saí com um visual que realmente combinou
+                comigo. Dá para perceber o cuidado em cada detalhe, desde a recepção até o resultado final. Não é só uma
+                barbearia, é um lugar onde você confia o seu estilo.”
+            </p>
+
+            <div class="depoimentos-container">
+
+                <!-- CLIENTE NUMERO 01-->
+
+                <div class="card-depoimento">
+
+                    <div class="col-foto">
+
+                        <img src="img/clientes/cliente1.webp" alt="Cliente" loading="lazy" width="220" height="220">
+
+                    </div>
+
+                    <div class="col-dados">
+
+                        <h3>João Silva</h3>
+
+                        <p>
+                            Excelente atendimento e ambiente impecável.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CLIENTE NUMERO 02-->
+
+                <div class="card-depoimento">
+
+                    <div class="col-foto">
+
+                        <img src="img/clientes/cliente2.webp" alt="Cliente" loading="lazy" width="220" height="220">
+
+                    </div>
+
+                    <div class="col-dados">
+
+                        <h3>Carlos Mendes</h3>
+
+                        <p>
+                            Atendimento profissional e cortes de qualidade.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CLIENTE NUMERO 03 -->
+
+                <div class="card-depoimento">
+
+                    <div class="col-foto">
+
+                        <img src="img/clientes/cliente3.webp" alt="Cliente" loading="lazy" width="220" height="220">
+
+                    </div>
+
+                    <div class="col-dados">
+
+                        <h3>Lucas Ferreira</h3>
+
+                        <p>
+                            Ambiente moderno e excelente experiência.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- AGENDAMENTO / FINAL DO SITE -->
+        <!-- A construção dessa section é a mesma base da HERO, porem agora para -->
+        <section class="agendamento">
+
+            <div class="overlay"></div>
+            <!-- Essa div existe só para escurecer a imagem futuramente, Ela NÃO tem conteúdo - Ela é uma camada visual. -->
+
+            <div class="agendamento-content"> <!-- Apresentação -->
+
+                <h2>
+                    Pronto para renovar seu visual?
+                </h2>
+
+                <p>
+                    Agende seu horário e tenha uma experiência completa.
+                </p>
+
+                <a href="#"> <!-- Link para o agendamento -->
+                    Agendar horário
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER-->
+
+    <footer class="footer">
+
+        <p class="footer-copy">
+            Horários: Seg-Sáb / 09h às 20h
+        </p>
+
+        <p class="footer-copy">
+            Telefone: (41) 99999-9999
+        </p>
+
+        <div class="footer-links"> <!-- link da biblioteca -->
+
+            <a href="#" target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+
+            </a>
+
+            <a href="#" target="_blank">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+
+            </a>
+
+        </div>
+
+        <p class="footer-copy">
+            © 2026 Felipe Hellmann
+        </p>
+
+    </footer>
+
+    <!-- Botão de WhatsApp flutuante-->
+
+    <a class="whatsapp-btn" href="#">
+
+        <img src="img/icones/wpp.ico" alt="WhatsApp">
+
+    </a>
+    <!--JAVA SCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

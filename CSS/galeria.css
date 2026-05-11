@@ -1,0 +1,173 @@
+.galeria{
+
+    padding: 100px 10%;
+
+}
+.galeria h2{
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+
+}
+.galeria h2{
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+
+}
+
+.galeria-imagens img{
+
+    width: 400px;
+
+    border-radius: 10px;
+
+    flex-shrink: 0;
+
+}
+.galeria-container{
+
+    position: relative;
+
+    overflow: hidden;
+
+   display: flex;
+
+    gap: 40px;
+
+}
+.galeria-imagens{
+
+    display: flex;
+
+    gap: 20px;
+
+    transition: 1.1s;
+
+    width: max-content;
+
+}
+.galeria-click{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 5;
+}
+.galeria-click.left{
+    left: 0;
+}
+
+.galeria-click.right{
+    right: 0;
+}
+.galeria-click{
+    background: transparent;
+}
+.galeria p {
+    text-align: center;
+    max-width: 3000px;
+    margin: 0 auto 50px auto;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    color: var(--texto-secundario);
+}
+
+/*//////////// CARDS DOS CLIENTES //////////////*/
+.depoimentos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+/* CARD */
+.card-depoimento {
+  background: linear-gradient(145deg, #111, #0b0b0b);
+  border-radius: 16px;
+  padding: 30px 25px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card-depoimento:hover {
+  transform: translateY(-6px);
+  border-color: var(--cor-secundaria);
+}
+
+/* FOTO */
+.col-foto img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid var(--cor-secundaria);
+  margin-bottom: 12px;
+}
+
+/* ESTRELAS */
+.estrelas {
+  color: gold;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* NOME */
+.col-dados h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+/* LINHA DECORATIVA */
+.divisor {
+  width: 50px;
+  height: 2px;
+  background: var(--cor-secundaria);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* TEXTO */
+.col-dados p {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+  line-height: 1.5;
+  max-width: 260px;
+}
+.depoimentos h2 {
+  text-align: center;     /* Centralizado com os cards */
+  letter-spacing: 2px;    /* Espaçamento entre letras elegante */
+  margin-bottom: 50px;    /* Espaço em relação aos cards */
+  position: relative;     /* Necessário para a linha abaixo */
+  font-weight: 700;
+}
+p {
+    text-align: center;
+    max-width: 3000px;
+    margin: 0 auto 50px auto;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    color: var(--texto-secundario);
+}

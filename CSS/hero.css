@@ -1,0 +1,209 @@
+.hero{
+
+    height: 100vh;
+
+    background-image: url('../img/hero/cap2.png');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+
+}
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+
+     position: absolute;
+
+}
+.hero-content{
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+.hero-content h1{
+
+    font-size: 4rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+.hero-content p{
+
+    font-size: 1.2rem;
+
+    color: var(--texto-secundario);
+
+    margin-bottom: 30px;
+
+}
+.hero-content a{
+
+    background-color: var(--cor-secundaria);
+
+    color: var(--cor-primaria);
+
+    padding: 15px 30px;
+
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+}
+.hero-content a:hover{
+
+    opacity: 0.8;
+
+}
+
+
+/* FINAL DA PAGINA: AGENDAMENTO */ 
+
+.agendamento {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: url("../img/hero/FINAL.png") center/cover no-repeat;
+  color: #fff;
+
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+/* CAMADA ESCURA */
+.agendamento .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* CONTEÚDO */
+.agendamento-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* TÍTULO */
+.agendamento-content h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  line-height: 1.2;
+}
+
+/* TEXTO */
+.agendamento-content p {
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  max-width: 500px;
+}
+
+/* BOTÃO */
+.agendamento-content a {
+  margin-top: 10px;
+
+  display: inline-block;
+  padding: 14px 32px;
+
+  background: var(--cor-secundaria);
+  color: #000;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.agendamento-content a:hover {
+  transform: translateY(-3px);
+  background: #e6c15a; /* leve variação mais clara */
+}
+
+ /* FOOTER */ 
+
+
+ .footer {
+  background: #0f0f0f;
+  color: #f1f1f1;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  text-align: center;
+}
+
+.footer-copy {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  transition: all 0.25s ease;
+}
+
+.footer-links a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.footer-links i {
+  font-size: 1.1rem;
+  color: #25d366; /* destaque leve no WhatsApp (ajuste se quiser) */
+}

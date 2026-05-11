@@ -1,0 +1,50 @@
+.header{
+
+    background-color: var(--cor-fundo);
+
+    padding: 20px 40px;
+
+}
+.navbar{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+.brand{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+.brand-name{
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+}
+.menu{
+
+    display: flex;
+
+    gap: 30px;
+
+}
+.menu a{
+
+    color: var(--texto-principal);
+
+    transition: 0.3s;
+}
+.menu a:hover{
+
+    color: var(--cor-secundaria);
+
+}
