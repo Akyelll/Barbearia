@@ -38,6 +38,7 @@
   .hero {
     min-height: 75vh;
     background-position: top center;
+     background-image: url('../img/hero/capcell.png');
   }
 
   .hero-content {
