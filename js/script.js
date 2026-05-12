@@ -2,43 +2,48 @@ const galeria = document.querySelector('.galeria-imagens');
 const left = document.querySelector('.galeria-click.left');
 const right = document.querySelector('.galeria-click.right');
 
-let position = 0;
-const step = 420;
-const totalItems = 5; // imagens reais
+if (galeria && left && right) {
 
-right.addEventListener('click', () => {
-    position++;
+    let position = 0;
+    const step = 420;
+    const totalItems = 5;
 
-    galeria.style.transition = "transform 0.5s ease";
-    galeria.style.transform = `translateX(-${position * step}px)`;
+    right.addEventListener('click', () => {
+        position++;
 
-    // quando chegar no fim "real"
-    if (position === totalItems) {
-
-        setTimeout(() => {
-            galeria.style.transition = "none";
-            position = 0;
-            galeria.style.transform = `translateX(0px)`;
-        }, 500); // mesmo tempo do transition
-    }
-});
-
-left.addEventListener('click', () => {
-    if (position === 0) {
-
-        galeria.style.transition = "none";
-        position = totalItems;
+        galeria.style.transition = "transform 0.5s ease";
         galeria.style.transform = `translateX(-${position * step}px)`;
 
-        setTimeout(() => {
-            galeria.style.transition = "transform 1.1s ease";
+        if (position === totalItems) {
+
+            setTimeout(() => {
+                galeria.style.transition = "none";
+                position = 0;
+                galeria.style.transform = `translateX(0px)`;
+            }, 500);
+        }
+    });
+
+    left.addEventListener('click', () => {
+
+        if (position === 0) {
+
+            galeria.style.transition = "none";
+            position = totalItems;
+            galeria.style.transform = `translateX(-${position * step}px)`;
+
+            setTimeout(() => {
+                galeria.style.transition = "transform 1.1s ease";
+                position--;
+                galeria.style.transform = `translateX(-${position * step}px)`;
+            }, 20);
+
+        } else {
+
             position--;
             galeria.style.transform = `translateX(-${position * step}px)`;
-        }, 20);
+        }
 
-    } else {
-        position--;
-        galeria.style.transform = `translateX(-${position * step}px)`;
-    }
-});
-    
+    });
+
+}
