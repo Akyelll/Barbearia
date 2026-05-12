@@ -21,7 +21,7 @@
 
     gap: 4rem;
 
- padding: 50px 10%
+    padding: 50px 10%;
 
 }
  .sobre-imagem{
@@ -34,10 +34,12 @@
     flex: 1;
 
 }
-.sobre-imagem img{
-
+.sobre-imagem img,
+.servicos-imagem img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 10px;
-
 }
 
 
@@ -89,11 +91,6 @@
 .servicos-imagem{
 
     flex: 1;
-
-}
-.servicos-imagem img{
-
-    border-radius: 10px;
 
 }
 .servicos-conteudo h2{

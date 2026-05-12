@@ -41,31 +41,4 @@ left.addEventListener('click', () => {
         galeria.style.transform = `translateX(-${position * step}px)`;
     }
 });
-    const header = document.querySelector(".header");
-    const btnTopo = document.getElementById("btn-topo");
-
-    const btnPlanetas = document.querySelector(".toggle-planetas");
-    const listaPlanetas = document.querySelector(".menu-planetas");
-
-    window.addEventListener("scroll", () => {
-
-      header.classList.toggle("sumir", window.scrollY > 50);
-
-      btnTopo.style.display = window.scrollY > 300
-        ? "block"
-        : "none";
-
-    });
-
-    btnPlanetas.addEventListener("click", () => {
-      listaPlanetas.classList.toggle("ativo");
-    });
-
-    btnTopo.addEventListener("click", () => {
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-
-    });
+    
