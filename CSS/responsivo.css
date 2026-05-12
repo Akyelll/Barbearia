@@ -1,0 +1,167 @@
+/* MOBILE — até 768px */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    padding: 15px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+      display: none;
+  }
+  .menu-mobile-btn {
+
+    display: flex;
+
+    position: fixed;
+
+    bottom: 100px;
+    right: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: var(--cor-secundaria);
+
+    color: #000;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 999;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+}
+
+  /* HERO */
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* SOBRE */
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  /* SERVIÇOS */
+  .servicos {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  /* GALERIA */
+  .galeria {
+    padding: 60px 20px;
+  }
+
+  .galeria-imagens img {
+    width: 280px;
+  }
+
+  /* DEPOIMENTOS */
+  .depoimentos-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .col-foto img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* AGENDAMENTO */
+  .agendamento-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .agendamento-content p {
+    font-size: 1rem;
+  }
+
+  /* FOOTER */
+  .footer-links {
+    gap: 15px;
+  }
+
+  /* TÍTULOS GERAIS */
+  h2 {
+    font-size: 2rem;
+  }
+
+}
+
+/* 769px até 1024px */ 
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .sobre,
+  .servicos {
+    gap: 2rem;
+    padding: 80px 5%;
+  }
+
+  .galeria-imagens img {
+    width: 320px;
+  }
+
+  .col-foto img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+  /* acima de 1440px */ 
+  @media (min-width: 1440px) {
+
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.4rem;
+  }
+
+  .sobre,
+  .servicos,
+  .galeria {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .depoimentos-container {
+    max-width: 1400px;
+  }
+  }

@@ -2,7 +2,7 @@
 :root{ 
 
     --cor-primaria: #121212;
-    --cor-secundaria: #c59d5f;
+    --cor-secundaria: #EFBF04;
     --cor-fundo: #1b1b1b;
 
     --texto-principal: #ffffff;
@@ -19,9 +19,9 @@
 
     justify-content: center;
 
-    gap: 60px;
+    gap: 4rem;
 
-    padding: 100px 10%;
+ padding: 50px 10%
 
 }
  .sobre-imagem{
@@ -39,11 +39,18 @@
     border-radius: 10px;
 
 }
+
+
 .sobre-conteudo h2{
 
     font-size: 2.5rem;
 
     margin-bottom: 20px;
+
+    gap: 80px;
+
+     text-align: center;
+
 
 }
 .sobre-conteudo p{
@@ -52,11 +59,14 @@
 
     line-height: 1.8;
 
+      gap: 80px;
+
 }
 
 /* SERVIÇOES */ 
 
 .servicos{
+
 
     display: flex;
 
@@ -64,9 +74,11 @@
 
     justify-content: center;
 
-    gap: 60px;
+    gap: 4rem;
 
-    padding: 100px 10%;
+    padding: 50px 10%;
+
+        margin-top: 0px;
 
 }
 .servicos-conteudo{
@@ -90,12 +102,17 @@
 
     margin-bottom: 20px;
 
+    text-align: center;
+
 }
 .servicos-conteudo p{
 
     color: var(--texto-secundario);
 
     line-height: 1.8;
+
+      gap: 80px;
+
 
 }
 
@@ -131,4 +148,41 @@
 .whatsapp-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+.whatsapp-btn {
+
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 60px;
+  height: 60px;
+
+  background: #25d366;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }

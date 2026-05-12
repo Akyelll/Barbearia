@@ -1,6 +1,6 @@
 .galeria{
 
-    padding: 100px 10%;
+    padding: 50px 10%;
 
 }
 .galeria h2{
@@ -71,6 +71,30 @@
 .galeria-click{
     background: transparent;
 }
+
+.galeria-click.left::before {
+    content: '\f053';  /* Seta esquerda */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.galeria-click.right::before {
+    content: '\f054';  /* Seta direita */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
 .galeria p {
     text-align: center;
     max-width: 3000px;
@@ -90,6 +114,7 @@
   padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
+
   
 }
 
@@ -106,6 +131,8 @@
 
   transition: 0.3s ease;
   border: 1px solid transparent;
+gap: 40px;
+  
 }
 
 .card-depoimento:hover {
@@ -122,13 +149,15 @@
 
   border: 3px solid var(--cor-secundaria);
   margin-bottom: 12px;
+  gap: 40px;
 }
 
 /* ESTRELAS */
-.estrelas {
-  color: gold;
-  font-size: 0.95rem;
-  margin-bottom: 10px;
+.estrela {
+  font-size: 1.0rem;
+  line-height: 1;
+ gap: 10px;
+ 
 }
 
 /* NOME */
@@ -139,8 +168,9 @@
 }
 
 /* LINHA DECORATIVA */
-.divisor {
-  width: 50px;
+
+.linha-divisoria {
+  width: 100%;
   height: 2px;
   background: var(--cor-secundaria);
   margin-bottom: 15px;
