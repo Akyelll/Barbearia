@@ -1,49 +1,52 @@
 const galeria = document.querySelector('.galeria-imagens');
-const left = document.querySelector('.galeria-click.left');
-const right = document.querySelector('.galeria-click.right');
+const slides = Array.from(galeria.children);
 
-if (galeria && left && right) {
+const slideWidth = 420; // imagem + gap
+let index = 0;
 
-    let position = 0;
-    const step = 420;
-    const totalItems = 5;
+// DUPLICAÇÃO REAL (não manual no HTML)
+slides.forEach(slide => {
+    const clone = slide.cloneNode(true);
+    galeria.appendChild(clone);
+});
 
-    right.addEventListener('click', () => {
-        position++;
+const total = slides.length;
 
-        galeria.style.transition = "transform 0.5s ease";
-        galeria.style.transform = `translateX(-${position * step}px)`;
-
-        if (position === totalItems) {
-
-            setTimeout(() => {
-                galeria.style.transition = "none";
-                position = 0;
-                galeria.style.transform = `translateX(0px)`;
-            }, 500);
-        }
-    });
-
-    left.addEventListener('click', () => {
-
-        if (position === 0) {
-
-            galeria.style.transition = "none";
-            position = totalItems;
-            galeria.style.transform = `translateX(-${position * step}px)`;
-
-            setTimeout(() => {
-                galeria.style.transition = "transform 1.1s ease";
-                position--;
-                galeria.style.transform = `translateX(-${position * step}px)`;
-            }, 20);
-
-        } else {
-
-            position--;
-            galeria.style.transform = `translateX(-${position * step}px)`;
-        }
-
-    });
-
+function moveTo(index) {
+    galeria.style.transition = "transform 0.6s ease";
+    galeria.style.transform = `translateX(-${index * slideWidth}px)`;
 }
+
+function resetPosition() {
+    galeria.style.transition = "none";
+    galeria.style.transform = `translateX(0px)`;
+    index = 0;
+}
+
+document.querySelector('.galeria-click.right').addEventListener('click', () => {
+    index++;
+    moveTo(index);
+
+    // quando chega no fim REAL (não duplicado)
+    if (index === total) {
+        setTimeout(() => {
+            resetPosition();
+        }, 600);
+    }
+});
+
+document.querySelector('.galeria-click.left').addEventListener('click', () => {
+    if (index === 0) {
+        galeria.style.transition = "none";
+        index = total;
+        galeria.style.transform = `translateX(-${index * slideWidth}px)`;
+
+        setTimeout(() => {
+            index--;
+            moveTo(index);
+        }, 20);
+    } else {
+        index--;
+        moveTo(index);
+    }
+});
