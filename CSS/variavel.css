@@ -1,119 +1,127 @@
-/* Regra: 60 / 30 / 10 - identidade visual do site */ 
-:root{ 
+/* Regra: 60 / 30 / 10 - identidade visual do site */
+:root {
 
-    --cor-primaria: #121212;
-    --cor-secundaria: #EFBF04;
-    --cor-fundo: #1b1b1b;
+  --cor-primaria: #121212;
+  --cor-secundaria: #EFBF04;
+  --cor-fundo: #1b1b1b;
 
-    --texto-principal: #ffffff;
-    --texto-secundario: #b3b3b3;
+  --texto-principal: #ffffff;
+  --texto-secundario: #b3b3b3;
 
 }
 
 /*  SOBRE NOS */
-.sobre{
+.sobre {
 
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    justify-content: center;
+  justify-content: center;
 
-    gap: 4rem;
+  gap: 4rem;
 
-    padding: 50px 10%;
-
-}
- .sobre-imagem{
-
-    flex: 1;
+  padding: 50px 10%;
 
 }
-.sobre-conteudo{
 
-    flex: 1;
+.sobre-imagem {
+
+  flex: 1;
 
 }
+
+.sobre-conteudo {
+
+  flex: 1;
+
+}
+
 .sobre-imagem img,
-.servicos-imagem img{
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 10px;
+.servicos-imagem img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 
-.sobre-conteudo h2{
+.sobre-conteudo h2 {
 
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    gap: 80px;
+  gap: 80px;
 
-     text-align: center;
-
-
-}
-.sobre-conteudo p{
-
-    color: var(--texto-secundario);
-
-    line-height: 1.8;
-
-      gap: 80px;
-
-}
-
-/* SERVIÇOES */ 
-
-.servicos{
-
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 4rem;
-
-    padding: 50px 10%;
-
-        margin-top: 0px;
-
-}
-.servicos-conteudo{
-
-    flex: 1;
-
-}
-.servicos-imagem{
-
-    flex: 1;
-
-}
-.servicos-conteudo h2{
-
-    font-size: 2.5rem;
-
-    margin-bottom: 20px;
-
-    text-align: center;
-
-}
-.servicos-conteudo p{
-
-    color: var(--texto-secundario);
-
-    line-height: 1.8;
-
-      gap: 80px;
+  text-align: center;
 
 
 }
 
-/* BOTÃO FLUTUANTE DO WPP */ 
+.sobre-conteudo p {
+
+  color: var(--texto-secundario);
+
+  line-height: 1.8;
+
+  gap: 80px;
+
+}
+
+/* SERVIÇOES */
+
+.servicos {
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4rem;
+
+  padding: 50px 10%;
+
+  margin-top: 0px;
+
+}
+
+.servicos-conteudo {
+
+  flex: 1;
+
+}
+
+.servicos-imagem {
+
+  flex: 1;
+
+}
+
+.servicos-conteudo h2 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+
+}
+
+.servicos-conteudo p {
+
+  color: var(--texto-secundario);
+
+  line-height: 1.8;
+
+  gap: 80px;
+
+
+}
+
+/* BOTÃO FLUTUANTE DO WPP */
 
 .whatsapp-btn {
   position: fixed;
@@ -146,7 +154,10 @@
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
+
 .whatsapp-btn {
+
+  z-index: 3000 !important;
 
   position: fixed;
   bottom: 25px;
@@ -166,6 +177,7 @@
 
   animation: pulse 2s infinite;
 }
+
 @keyframes pulse {
 
   0% {
@@ -182,4 +194,150 @@
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
+}
+
+/* LOCALIZAÇÃO */
+
+.localizacao {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 100px 10%;
+
+    background: #121212;
+
+    color: white;
+
+    flex-wrap: wrap;
+
+}
+
+.info-local {
+
+    flex: 1;
+    min-width: 300px;
+
+}
+
+.tag {
+
+    display: inline-block;
+
+    background: #EFBF04;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+}
+
+.info-local h2 {
+
+    font-size: 2rem;
+
+    line-height: 1.3;
+
+    margin-bottom: 40px;
+
+}
+
+.btn-local {
+
+    display: inline-block;
+
+    background: #EFBF04;
+
+    color: rgb(0, 0, 0);
+
+    text-decoration: none;
+
+    padding: 18px 40px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.btn-local:hover {
+
+    transform: translateY(-3px);
+
+    opacity: 0.9;
+
+}
+
+.mapa {
+
+    flex: 1;
+
+    min-width: 320px;
+
+    height: 350px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+}
+
+/*Efeito de brilho no link*/
+
+.link-efeito {
+    position: relative;
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    overflow: hidden;
+}
+
+.link-efeito::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.6),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    animation: shine-loop 2.0s infinite;
+}
+
+@keyframes shine-loop {
+    0% {
+        left: -120%;
+    }
+
+    50% {
+        left: 220%;
+    }
+
+    100% {
+        left: 220%;
+    }
 }

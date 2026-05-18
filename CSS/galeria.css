@@ -1,91 +1,102 @@
-.galeria{
-
+/* =========================
+   GALERIA BASE
+========================= */
+.galeria {
     padding: 50px 10%;
-
 }
-.galeria h2{
 
+.galeria h2 {
     text-align: center;
-
     font-size: 2.5rem;
-
     margin-bottom: 50px;
-
 }
-.galeria h2{
 
-    text-align: center;
-
-    font-size: 2.5rem;
-
-    margin-bottom: 50px;
-
-}
-.galeria-container{
+/* =========================
+   VIEWPORT (JANELA FIXA)
+========================= */
+.galeria-container {
     position: relative;
     overflow: hidden;
-    display: flex;
+
+    width: 100%;
+    max-width: calc(400px * 3 + 40px); /* 3 imagens + gaps */
+
+    margin: 0 auto;
 }
 
-.galeria-imagens{
+/* =========================
+   TRILHO (MOVIMENTO JS)
+========================= */
+.galeria-imagens {
     display: flex;
     gap: 20px;
+
     will-change: transform;
+    transition: transform 0.6s ease;
 }
 
-.galeria-imagens img{
+/* =========================
+   IMAGENS (FIXAS)
+========================= */
+.galeria-imagens img {
     width: 400px;
     height: 400px;
     object-fit: cover;
+
     border-radius: 10px;
     flex-shrink: 0;
 }
 
-.galeria-click{
+/* =========================
+   BOTÕES
+========================= */
+.galeria-click {
     position: absolute;
     top: 0;
-    width: 50%;
+    width: 60px;
     height: 100%;
     cursor: pointer;
     z-index: 5;
-}
-.galeria-click.left{
-    left: 0;
-}
-
-.galeria-click.right{
-    right: 0;
-}
-.galeria-click{
     background: transparent;
 }
 
-.galeria-click.left::before {
-    content: '\f053';  /* Seta esquerda */
+.galeria-click.left {
+    left: 0;
+}
+
+.galeria-click.right {
+    right: 0;
+}
+
+/* SETAS */
+.galeria-click.left::before,
+.galeria-click.right::before {
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     font-size: 2rem;
     color: var(--cor-secundaria);
+
     position: absolute;
     top: 50%;
-    left: 20px;
     transform: translateY(-50%);
 }
 
-.galeria-click.right::before {
-    content: '\f054';  /* Seta direita */
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    font-size: 2rem;
-    color: var(--cor-secundaria);
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+.galeria-click.left::before {
+    content: '\f053';
+    left: 15px;
 }
+
+.galeria-click.right::before {
+    content: '\f054';
+    right: 15px;
+}
+
+/* =========================
+   TEXTO
+========================= */
 .galeria p {
     text-align: center;
-    max-width: 3000px;
+    max-width: 900px;
     margin: 0 auto 50px auto;
 
     font-size: 1.05rem;
@@ -95,32 +106,87 @@
 }
 
 /*//////////// CARDS DOS CLIENTES //////////////*/
-.depoimentos-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  
+/* =========================
+   SEÇÃO PRINCIPAL
+========================= */
+.depoimentos {
+  padding: 60px 10%;
 }
 
-/* CARD */
+/* =========================
+   LAYOUT: TEXTO + CARROSSEL
+========================= */
+.depoimentos-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXTO FIXO */
+.depoimentos-texto {
+  flex: 1;
+  max-width: 500px;
+}
+
+.depoimentos-texto h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* parágrafos com legibilidade real */
+.depoimentos-texto p {
+  max-width: 60ch;
+  line-height: 1.7;
+  color: var(--texto-secundario);
+  margin-bottom: 20px;
+}
+
+/* =========================
+   CARROSSEL WRAPPER
+========================= */
+.depoimentos-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* janela visível (2 cards) */
+.depoimentos-viewport {
+  width: calc(320px * 2 + 20px);
+  overflow: hidden;
+}
+
+/* trilho que o JS move */
+.depoimentos-container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+/* =========================
+   CARD
+========================= */
 .card-depoimento {
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+
   background: linear-gradient(145deg, #111, #0b0b0b);
   border-radius: 16px;
-  padding: 30px 25px;
-  text-align: center;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+
+  gap: 18px;
+  border: 1px solid transparent;
 
   transition: 0.3s ease;
-  border: 1px solid transparent;
-gap: 40px;
-  
 }
 
 .card-depoimento:hover {
@@ -128,64 +194,67 @@ gap: 40px;
   border-color: var(--cor-secundaria);
 }
 
-/* FOTO */
+/* =========================
+   FOTO
+========================= */
 .col-foto img {
-  width: 300px;
-  height: 300px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
 
   border: 3px solid var(--cor-secundaria);
-  margin-bottom: 12px;
-  gap: 40px;
 }
 
-/* ESTRELAS */
-.estrela {
-  font-size: 1.0rem;
-  line-height: 1;
- gap: 10px;
- 
-}
-
-/* NOME */
+/* =========================
+   TEXTO INTERNO
+========================= */
 .col-dados h3 {
   font-size: 1.1rem;
   color: #fff;
-  margin-bottom: 12px;
 }
 
-/* LINHA DECORATIVA */
+.estrela {
+  font-size: 0.95rem;
+}
 
 .linha-divisoria {
   width: 100%;
   height: 2px;
   background: var(--cor-secundaria);
-  margin-bottom: 15px;
   border-radius: 5px;
 }
 
-/* TEXTO */
 .col-dados p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #cfcfcf;
   line-height: 1.5;
   max-width: 260px;
 }
-.depoimentos h2 {
-  text-align: center;     /* Centralizado com os cards */
-  letter-spacing: 2px;    /* Espaçamento entre letras elegante */
-  margin-bottom: 50px;    /* Espaço em relação aos cards */
-  position: relative;     /* Necessário para a linha abaixo */
-  font-weight: 700;
+
+/* =========================
+   BOTÕES
+========================= */
+.depoimentos-click {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 2rem;
+  color: white;
+
+  cursor: pointer;
+  z-index: 10;
+
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
 }
-p {
-    text-align: center;
-    max-width: 3000px;
-    margin: 0 auto 50px auto;
 
-    font-size: 1.05rem;
-    line-height: 1.7;
+.depoimentos-click.left {
+  left: 10px;
+}
 
-    color: var(--texto-secundario);
+.depoimentos-click.right {
+  right: 10px;
 }
