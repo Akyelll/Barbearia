@@ -30,55 +30,77 @@ Este projeto é uma **landing page completa para barbearia**, contendo:
 - Criar componentes reutilizáveis e animações leves
 
 ---
-⚙️ Tecnologias Utilizadas
-HTML5 semântico
-CSS3 (Flexbox, Grid, animações e responsividade)
-JavaScript Vanilla (DOM, eventos, carrosséis)
-Google Maps Embed API
-WhatsApp Click-to-Chat API
-Font Awesome (ícones)
-🎯 Funcionalidades
-📌 Interface e UX
-Layout moderno e responsivo
-Menu mobile com toggle
-Tipografia consistente e hierarquia visual
-🎠 Interações
-Carrossel infinito de galeria
-Depoimentos com navegação dinâmica
-Botão flutuante do WhatsApp com animação
-Efeito de brilho em botões e links
-📅 Agendamento
-Formulário funcional
-Redirecionamento automático para WhatsApp
-Estrutura preparada para expansão (backend futuro)
-📱 Responsividade
+## ⚙️ Tecnologias Utilizadas
+
+- HTML5 semântico  
+- CSS3 (Flexbox, Grid, animações e responsividade)  
+- JavaScript Vanilla (DOM, eventos, carrosséis)  
+- Google Maps Embed API  
+- WhatsApp Click-to-Chat API  
+- Font Awesome (ícones)  
+
+---
+
+## 🎯 Funcionalidades
+
+### 📌 Interface e UX
+- Layout moderno e responsivo  
+- Menu mobile com toggle  
+- Tipografia consistente e hierarquia visual  
+
+### 🎠 Interações
+- Carrossel infinito de galeria  
+- Depoimentos com navegação dinâmica  
+- Botão flutuante do WhatsApp com animação  
+- Efeito de brilho em botões e links  
+
+### 📅 Agendamento
+- Formulário funcional  
+- Redirecionamento automático para WhatsApp  
+- Estrutura preparada para expansão (backend futuro)  
+
+---
+
+## 📱 Responsividade
 
 O projeto foi desenvolvido com foco em:
 
-Mobile (até 768px)
-Tablet (769px – 1024px)
-Desktop (1440px+)
+- Mobile (até 768px)  
+- Tablet (769px – 1024px)  
+- Desktop (1440px+)  
 
-Layout adaptativo com reorganização de blocos e tipografia ajustada.
+Layout adaptativo com reorganização de blocos e ajuste de tipografia para diferentes telas.
 
-💡 Destaques Técnicos
-Código modularizado por responsabilidade (CSS separado por seção)
-Animações leves sem bibliotecas externas pesadas
-Carrosséis otimizados em JS puro
-Uso de variáveis CSS para identidade visual
-Estrutura escalável para evolução para React ou backend
-📈 Aprendizados
-Organização de projetos reais front-end
-Construção de UI comercial (não apenas acadêmica)
-Manipulação de DOM sem frameworks
-Controle de responsividade em múltiplos níveis
-Criação de experiência de usuário consistente
-🔮 Possíveis melhorias futuras
-Backend para agendamentos reais
-Banco de dados para serviços e horários
-Painel administrativo
-Integração com sistema de pagamento
-Migração para React ou Next.js
+---
+
+## 💡 Destaques Técnicos
+
+- Código modularizado por responsabilidade (CSS separado por seção)  
+- Animações leves sem bibliotecas externas pesadas  
+- Carrosséis otimizados em JavaScript puro  
+- Uso de variáveis CSS para identidade visual  
+- Estrutura escalável para evolução futura (React ou backend)  
+
+---
+
+## 📈 Aprendizados
+
+- Organização de projetos reais de front-end  
+- Construção de interface com padrão comercial  
+- Manipulação do DOM sem frameworks  
+- Controle de responsividade em múltiplos breakpoints  
+- Criação de experiência de usuário consistente e fluida  
+
+---
+
+## 🔮 Possíveis melhorias futuras
+
+- Backend para agendamentos reais  
+- Banco de dados para serviços e horários  
+- Painel administrativo  
+- Integração com sistema de pagamento  
+- Migração para React ou Next.js  
+
 👨‍💻 Autor
 
 Desenvolvido por Felipe Hellmann
