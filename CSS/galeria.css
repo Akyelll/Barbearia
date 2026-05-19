@@ -199,7 +199,7 @@
 
 .card-depoimento:hover {
   transform: translateY(-6px);
-  border-color: var(--cor-secundaria);
+  
 }
 
 /* =========================
@@ -219,11 +219,22 @@
 ========================= */
 .col-dados h3 {
   font-size: 1.1rem;
-  color: #fff;
+  color: var(--texto-principal);
+ 
 }
 
 .estrela {
   font-size: 0.95rem;
+
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+.col-dados {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .linha-divisoria {
@@ -235,9 +246,10 @@
 
 .col-dados p {
   font-size: 0.9rem;
-  color: #cfcfcf;
+  color: var(--texto-secundario);
   line-height: 1.5;
   max-width: 260px;
+  margin: 25px auto 70px auto;
 }
 
 /* =========================
@@ -249,7 +261,7 @@
   transform: translateY(-50%);
 
   font-size: 2rem;
-  color: white;
+  color:var(--cor-secundaria);
 
   cursor: pointer;
   z-index: 10;

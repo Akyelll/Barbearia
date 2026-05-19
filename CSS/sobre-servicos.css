@@ -1,0 +1,113 @@
+/*  SOBRE NOS */
+.sobre {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4rem;
+
+  padding: 50px 10%;
+
+}
+
+.sobre-imagem {
+
+  flex: 1;
+
+}
+
+.sobre-conteudo {
+
+  flex: 1;
+
+}
+
+.sobre-imagem img,
+.servicos-imagem img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.sobre-conteudo h2 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+
+  gap: 80px;
+
+  text-align: center;
+
+
+}
+
+.sobre-conteudo p {
+
+  color: var(--texto-secundario);
+
+  line-height: 1.8;
+
+  gap: 80px;
+
+  margin: 25px auto 70px auto;
+
+}
+
+/* SERVIÇOES */
+
+.servicos {
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4rem;
+
+  padding: 50px 10%;
+
+  margin-top: 0px;
+
+}
+
+.servicos-conteudo {
+
+  flex: 1;
+
+}
+
+.servicos-imagem {
+
+  flex: 1;
+
+}
+
+.servicos-conteudo h2 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+
+}
+
+.servicos-conteudo p {
+
+  color: var(--texto-secundario);
+
+  line-height: 1.8;
+
+  gap: 80px;
+
+  margin: 25px auto 70px auto;
+
+}

@@ -1,0 +1,183 @@
+/* BOTÃO FLUTUANTE DO WPP */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 60px;
+  height: 60px;
+
+  background: #25d366;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  z-index: 999;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-btn {
+
+  z-index: 3000 !important;
+
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 60px;
+  height: 60px;
+
+  background: #25d366;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+/*Efeito de brilho no link*/
+
+.link-efeito {
+  position: relative;
+  display: inline-block;
+
+  color: white;
+  text-decoration: none;
+
+  padding: 8px 12px;
+
+  overflow: hidden;
+}
+
+.link-efeito::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+
+  width: 60%;
+  height: 100%;
+
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent);
+
+  transform: skewX(-20deg);
+
+  animation: shine-loop 2.0s infinite;
+}
+
+@keyframes shine-loop {
+  0% {
+    left: -120%;
+  }
+
+  50% {
+    left: 220%;
+  }
+
+  100% {
+    left: 220%;
+  }
+}
+
+/* =========================
+   EFEITO DE BRILHO NO BOTÃO DO MAPA
+========================= */
+
+.link-efeito {
+    position: relative;
+    overflow: hidden;
+}
+
+.link-efeito::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.6),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    animation: brilho-loop 2s infinite;
+}
+
+@keyframes brilho-loop {
+
+    0% {
+        left: -120%;
+    }
+
+    50% {
+        left: 220%;
+    }
+
+    100% {
+        left: 220%;
+    }
+}
+
+
+/******** BOTÃO DA POLITCA DE PRIVACIDADE ********/
+
+.link-privacidade {
+
+    color: var(--cor-secundaria);
+
+    transition: 0.3s ease;
+
+}
+
+.link-privacidade:hover {
+
+    opacity: 0.8;
+
+}
