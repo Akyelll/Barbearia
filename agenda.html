@@ -24,12 +24,11 @@
 
     <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/variavel.css">
     <link rel="stylesheet" href="CSS/hero.css">
     <link rel="stylesheet" href="CSS/navbar.css">
-    <link rel="stylesheet" href="CSS/galeria.css">
-    <link rel="stylesheet" href="CSS/privacidade.css">
     <link rel="stylesheet" href="CSS/responsivo.css">
+<link rel="stylesheet" href="CSS/agenda.css">
+
 
     <!-- Descrição do site -->
 
@@ -55,7 +54,7 @@
 
                 <img src="img/icones/logo.ico" alt="Barbearia" loading="eager" width="40" height="40">
 
-                <span class="brand-name">Barberia XXX</span>
+                <span class="brand-name">Barbearia XXX</span>
 
             </div>
 
@@ -64,7 +63,7 @@
             </div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="agenda.html">Agendamento</a></li>
+                <li><a href="privacidade.html">Serviços</a></li>
 
 
             </ul>
@@ -72,56 +71,49 @@
         </nav>
 
     </header>
+ 
+ 
+ <section class="agendamento-page">
 
+    <div class="agendamento-box">
 
-    <main class="politica">
+        <h1>Agende seu horário</h1>
 
-        <section class="politica-hero">
-            <h1>Política de Privacidade</h1>
+        <form id="form-agendamento">
 
-            <p>
-                Entenda como coletamos, utilizamos e protegemos seus dados.
-            </p>
-        </section>
+            <select>
+                <option>Corte Executivo</option>
+                <option>Corte Simples</option>
+                <option>Barba</option>
+            </select>
 
-        <section class="politica-bloco">
-            <h2>1. Coleta de informações</h2>
+            <input type="date">
 
-            <p>
-                Podemos coletar informações fornecidas pelo usuário
-                durante o agendamento ou contato via WhatsApp.
-            </p>
-        </section>
+            <input type="time">
 
-        <section class="politica-bloco">
-            <h2>2. Uso das informações</h2>
+            <input type="text" placeholder="Seu nome">
 
-            <p>
-                As informações são utilizadas apenas para atendimento,
-                agendamento e comunicação com o cliente.
-            </p>
-        </section>
+            <input type="tel" placeholder="WhatsApp">
 
-        <section class="politica-bloco">
-            <h2>3. Compartilhamento</h2>
+            <button type="submit">
+                Agendar no WhatsApp
+            </button>
 
-            <p>
-                Não compartilhamos dados pessoais com terceiros.
-            </p>
-        </section>
+        </form>
 
-        <section class="politica-bloco">
-            <h2>4. Contato</h2>
+    </div>
 
-            <p>
-                Para dúvidas relacionadas à privacidade,
-                entre em contato pelo WhatsApp.
-            </p>
-        </section>
-
-    </main>
-
-    <!-- FOOTER-->
+</section>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- FOOTER-->
 
     <footer class="footer">
 
@@ -132,6 +124,13 @@
         <p class="footer-copy">
             Telefone: (41) 99999-9999
         </p>
+
+        <a href="privacidade.html" target="_blank">
+
+            <i class="fa-solid fa-user-shield"></i>
+            Política de Privacidade
+
+        </a>
 
         <div class="footer-links"> <!-- link da biblioteca -->
 
@@ -149,6 +148,7 @@
 
             </a>
 
+
         </div>
 
         <p class="footer-copy">
@@ -157,15 +157,9 @@
 
     </footer>
 
-    <!-- Botão de WhatsApp flutuante-->
-
-    <a class="whatsapp-btn" href="#">
-
-        <img src="img/icones/wpp.ico" alt="WhatsApp">
-
-    </a>
     <!--JAVA SCRIPT -->
     <script src="js/menu.js"></script>
+    <script src="js/agenda.js"></script>
 </body>
 
 </html>
