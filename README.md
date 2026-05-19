@@ -106,6 +106,15 @@ Layout adaptativo com reorganização de blocos e ajuste de tipografia para dife
 Desenvolvido por Felipe Hellmann
 Projeto com foco em evolução prática em desenvolvimento front-end.
 
+## 🔗 Live Demo
+
+Acesse o projeto em produção:  
+https://akyelll.github.io/Barbearia/
+
+## 🔗 Portfólio
+
+👉 [Acessar portfólio](https://akyelll.github.io/portfolio/)
+
 📌 Observação
 
 Este projeto simula um ambiente real de produção, com foco em experiência do usuário, estrutura limpa e escalabilidade.
