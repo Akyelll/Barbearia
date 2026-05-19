@@ -2,107 +2,115 @@
    GALERIA BASE
 ========================= */
 .galeria {
-    padding: 50px 10%;
+  padding: 50px 10%;
 }
 
 .galeria h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 /* =========================
    VIEWPORT (JANELA FIXA)
 ========================= */
 .galeria-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    width: 100%;
-    max-width: calc(400px * 3 + 40px); /* 3 imagens + gaps */
+  width: 100%;
+  max-width: calc(400px * 3 + 40px);
+  /* 3 imagens + gaps */
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* =========================
    TRILHO (MOVIMENTO JS)
 ========================= */
 .galeria-imagens {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 
-    will-change: transform;
-    transition: transform 0.6s ease;
+  will-change: transform;
+  transition: transform 0.6s ease;
 }
 
 /* =========================
    IMAGENS (FIXAS)
 ========================= */
 .galeria-imagens img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 
-    border-radius: 10px;
-    flex-shrink: 0;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
 /* =========================
    BOTÕES
 ========================= */
 .galeria-click {
-    position: absolute;
-    top: 0;
-    width: 60px;
-    height: 100%;
-    cursor: pointer;
-    z-index: 5;
-    background: transparent;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  cursor: pointer;
+  z-index: 5;
+  background: transparent;
 }
 
 .galeria-click.left {
-    left: 0;
+  left: 0;
 }
 
 .galeria-click.right {
-    right: 0;
+  right: 0;
 }
 
 /* SETAS */
 .galeria-click.left::before,
 .galeria-click.right::before {
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    font-size: 2rem;
-    color: var(--cor-secundaria);
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--cor-secundaria);
 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .galeria-click.left::before {
-    content: '\f053';
-    left: 15px;
+  content: '\f053';
+  left: 15px;
 }
 
 .galeria-click.right::before {
-    content: '\f054';
-    right: 15px;
+  content: '\f054';
+  right: 15px;
 }
 
 /* =========================
    TEXTO
 ========================= */
 .galeria p {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto 50px auto;
 
-    font-size: 1.05rem;
-    line-height: 1.7;
 
-    color: var(--texto-secundario);
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 25px auto 70px auto;
+
+  color: var(--texto-secundario);
+
+  line-height: 1.8;
+
+  text-align: center;
+
+  font-size: 1.05rem;
+
 }
 
 /*//////////// CARDS DOS CLIENTES //////////////*/
@@ -247,7 +255,7 @@
   z-index: 10;
 
   padding: 10px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 

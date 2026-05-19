@@ -1,0 +1,48 @@
+.politica {
+
+    padding: 120px 10% 80px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.politica-hero {
+
+    margin-bottom: 80px;
+
+    text-align: center;
+}
+
+.politica-hero h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+.politica-hero p {
+
+    color: var(--texto-secundario);
+
+    line-height: 1.7;
+}
+
+.politica-bloco {
+
+    margin-bottom: 60px;
+}
+
+.politica-bloco h2 {
+
+    margin-bottom: 18px;
+
+    color: var(--cor-secundaria);
+}
+
+.politica-bloco p {
+
+    color: var(--texto-secundario);
+
+    line-height: 1.8;
+}

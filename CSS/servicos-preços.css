@@ -1,0 +1,165 @@
+/* =========================
+   SERVIÇOS / PREÇOS
+========================= */
+
+.servicos-precos {
+      width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 80px 5%;
+}
+
+.servicos-precos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.servicos-precos p {
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 25px auto 70px auto;
+
+    color: var(--texto-secundario);
+
+    line-height: 1.8;
+
+    text-align: center;
+
+    font-size: 1.05rem;
+}
+
+/* =========================
+   GRID DOS CARDS
+========================= */
+
+.servicos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+       width: 100%;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card-servico {
+
+    background: linear-gradient(
+        145deg,
+        #3a3a3a,
+        #0d0d0d
+    );
+
+    border: 1px solid transparent;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    transition: 0.35s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 18px;
+
+    overflow: hidden;
+}
+
+/* HOVER */
+
+.card-servico:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--cor-secundaria);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35),
+        0 0 12px rgba(239, 191, 4, 0.25);
+}
+
+/* =========================
+   IMAGEM
+========================= */
+
+.card-servico img {
+
+    width: 100%;
+    max-width: 220px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.card-servico h3 {
+
+    font-size: 1.3rem;
+
+    color: white;
+}
+
+/* =========================
+   PREÇO
+========================= */
+
+.card-servico h1 {
+
+    font-size: 2rem;
+
+    color: var(--cor-secundaria);
+
+    font-weight: 700;
+}
+
+/* =========================
+   LINHA
+========================= */
+
+.card-servico .linha-divisoria {
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--cor-secundaria);
+
+    border-radius: 999px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.card-servico p {
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+
+    color: #c7c7c7;
+
+    margin: 0;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+

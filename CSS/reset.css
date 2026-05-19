@@ -1,11 +1,12 @@
-/* Limpa o terrono, redinindo os padõres de fabrica para o 0 */ 
-*{ 
+/* Limpa o terrono, redinindo os padõres de fabrica para o 0 */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Regra: 60 / 30 / 10 - identidade visual do site */ 
-:root{ 
+
+/* Regra: 60 / 30 / 10 - identidade visual do site */
+:root {
 
     --cor-primaria: #121212;
     --cor-secundaria: #c59d5f;

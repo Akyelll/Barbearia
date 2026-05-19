@@ -1,8 +1,35 @@
 @media (max-width: 768px) {
 
-  h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     text-align: center;
-  }
+}
+
+/* =========================
+   TIPOGRAFIA MOBILE
+========================= */
+
+h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.9rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
     .brand-name {
     display: none;
   }
@@ -75,12 +102,67 @@
   .btn {
     z-index: 99999;
   }
+/* wpp botão */
 
   .whatsapp-btn {
     z-index: 99999;
     bottom: 20px;
     right: 20px;
   }
+}
+/*serviços e preços */
+
+/* =========================
+   SERVIÇOS / PREÇOS MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .servicos-precos {
+
+        padding: 60px 20px;
+    }
+
+    .servicos-grid {
+
+        display: grid;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 25px;
+    }
+
+    .card-servico {
+
+        width: 100%;
+
+        max-width: 380px;
+
+        margin: 0 auto;
+    }
+
+    .card-servico img {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        height: 220px;
+
+        object-fit: cover;
+    }
+
+    .servicos-precos h2 {
+
+        font-size: 2rem;
+    }
+
+    .servicos-precos p {
+
+        font-size: 0.95rem;
+
+        margin-bottom: 40px;
+    }
 }
 
 /*TABLET 769PX - 1024PX*/
@@ -136,6 +218,15 @@
   }
   
 }
+/* serviços e preços */ 
+
+    .servicos-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*=============================================================================*/
+    
 /*TELAS GRANDES ACIMA DE 1440PX*/
 
 @media (min-width: 1440px) {
